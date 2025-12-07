@@ -5,9 +5,22 @@
 
   &__nav-links {
     display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     @media (min-width: 600px) {
       display: block;
+    }
+  }
+
+  &__auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+
+    .MuiButton-root {
+      white-space: nowrap;
     }
   }
 }
