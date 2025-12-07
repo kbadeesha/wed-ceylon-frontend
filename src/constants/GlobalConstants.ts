@@ -1,5 +1,5 @@
 const GlobalConstants = {
-  APP_NAME: 'Wed Ceylon',
+  APP_NAME: 'WedCeylon',
 };
 
 export default GlobalConstants;

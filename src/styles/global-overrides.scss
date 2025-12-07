@@ -87,7 +87,7 @@
 
 /* Body background for dark theme */
 body {
-  background-color: var(--color-background) !important;
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-darker-gray) 100%);
   color: var(--color-text-primary) !important;
 }
 

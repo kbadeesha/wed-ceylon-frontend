@@ -21,9 +21,14 @@ export default function NavBar() {
         </Typography>
         <Box className="navbar__nav-links">
           {navItems.map((item) => (
-            <Button key={item.label} component={NavLink} to={item.path}>
-              {item.label}
-            </Button>
+            <NavLink
+              key={item.label}
+              to={item.path}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              style={{ textDecoration: 'none' }}
+            >
+              <Button>{item.label}</Button>
+            </NavLink>
           ))}
         </Box>
         <Box className="navbar__auth-buttons">
