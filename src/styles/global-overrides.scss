@@ -1,0 +1,106 @@
+/* Global Material-UI overrides for dark theme */
+.MuiButton-root {
+  color: var(--color-text-primary) !important;
+}
+
+.MuiButton-contained {
+  background-color: var(--color-primary) !important;
+  color: var(--color-secondary) !important;
+}
+
+.MuiButton-text {
+  color: var(--color-text-primary) !important;
+}
+
+.MuiButton-outlined {
+  color: var(--color-text-primary) !important;
+  border-color: var(--color-text-primary) !important;
+}
+
+.MuiLink-root {
+  color: var(--color-text-primary) !important;
+  text-decoration: none !important;
+}
+
+.MuiLink-root:hover {
+  color: var(--color-text-primary) !important;
+  text-decoration: underline !important;
+}
+
+.MuiTypography-root {
+  color: var(--color-text-primary) !important;
+}
+
+.MuiAppBar-root {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.MuiPaper-root {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.MuiCard-root {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.MuiTextField-root .MuiInputBase-root {
+  color: var(--color-text-primary) !important;
+  background-color: var(--color-surface) !important;
+}
+
+.MuiTextField-root .MuiInputBase-root .MuiInputBase-input {
+  color: var(--color-text-primary) !important;
+}
+
+.MuiTextField-root .MuiInputLabel-root {
+  color: var(--color-text-secondary) !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--color-dark-gray) !important;
+}
+
+.MuiChip-root {
+  background-color: var(--color-darker-gray) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.MuiTab-root {
+  color: var(--color-text-primary) !important;
+}
+
+.MuiTab-root.Mui-selected {
+  color: var(--color-text-primary) !important;
+}
+
+.MuiMenuItem-root {
+  color: var(--color-text-primary) !important;
+  background-color: var(--color-surface) !important;
+}
+
+.MuiListItem-root {
+  color: var(--color-text-primary) !important;
+}
+
+/* Body background for dark theme */
+body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Ensure all text uses our theme colors */
+* {
+  color: var(--color-text-primary);
+}
+
+/* Override any default blue colors */
+a {
+  color: var(--color-text-primary) !important;
+}
+
+a:hover {
+  color: var(--color-text-primary) !important;
+}

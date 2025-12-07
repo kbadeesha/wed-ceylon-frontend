@@ -1,0 +1,29 @@
+// CSS Custom Properties (CSS Variables) for global dark theme
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-gray: #f5f5f5;
+  --color-dark-gray: #333333;
+  --color-darker-gray: #1a1a1a;
+  --color-darkest: #121212;
+
+  --color-primary: var(--color-white);
+  --color-secondary: var(--color-black);
+  --color-background: var(--color-darkest);
+  --color-surface: var(--color-darker-gray);
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-light-gray);
+}
+
+// SCSS Variables (for use in SCSS files)
+$black: var(--color-black);
+$white: var(--color-white);
+$light-gray: var(--color-light-gray);
+$dark-gray: var(--color-dark-gray);
+
+$primary-color: var(--color-primary);
+$secondary-color: var(--color-secondary);
+$background-color: var(--color-background);
+$surface-color: var(--color-surface);
+$text-primary-color: var(--color-text-primary);
+$text-secondary-color: var(--color-text-secondary);

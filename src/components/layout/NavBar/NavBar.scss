@@ -1,0 +1,13 @@
+.navbar {
+  &__brand {
+    flex-grow: 1;
+  }
+
+  &__nav-links {
+    display: none;
+
+    @media (min-width: 600px) {
+      display: block;
+    }
+  }
+}

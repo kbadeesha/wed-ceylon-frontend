@@ -1,3 +1,7 @@
+// Import variables and global overrides
+@import './_variables.scss';
+@import './global-overrides.scss';
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
