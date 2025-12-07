@@ -8,7 +8,6 @@ const navItems = [
   { label: 'Find Vendors', path: '/vendors' },
   { label: 'Plan Your Wedding', path: '/plan-wedding' },
   { label: 'Favorites', path: '/favorites' },
-  { label: 'About', path: '/about' },
 ];
 
 export default function NavBar() {
