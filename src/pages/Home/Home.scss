@@ -1,6 +1,17 @@
+// Main container with white background - full width
+.home-container {
+  background: var(--color-beige);
+  width: 100%;
+  padding: 2rem;
+}
+
+// Hero section keeps the beige background
 .home-hero__container {
   border-radius: 16px;
-  background: var(--color-background);
+  background: var(--color-beige);
+  padding: 4rem;
+  margin-bottom: 4rem;
+  width: 100%;
 }
 
 .home-hero__content {
@@ -20,12 +31,10 @@
 }
 
 .home-page .home-hero__subtitle {
-  padding-bottom: 20;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 400;
   margin-bottom: 3rem;
   color: var(--color-text-secondary);
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;

@@ -1,6 +1,6 @@
-import { Box, Container, Typography, Card, CardContent, Stack } from '@mui/material';
-import { Shield, Zap, Users } from 'lucide-react';
-import Button from '../../components/common/Button';
+import { Box, Container, Typography, Button, Card, CardContent, Stack } from '@mui/material';
+import { Shield, Zap, Users, Sparkles } from 'lucide-react';
+import { Link as RouterLink } from 'react-router-dom';
 import './Home.scss';
 import GlobalConstants from '../../constants/GlobalConstants';
 
@@ -30,7 +30,7 @@ const HomePage = () => {
 
   return (
     <Box className="home-page">
-      <Container maxWidth="lg" className="home-hero__container">
+      <Container className="home-hero__container">
         <Box className="home-hero__content">
           <Typography variant="h1" className="home-hero__title" component="h1">
             Your Dream Wedding
@@ -44,10 +44,23 @@ const HomePage = () => {
           </Typography>
 
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} className="home-hero__actions">
-            <Button variant="primary" size="large" to="/vendors">
+            <Button
+              variant="contained"
+              size="large"
+              component={RouterLink}
+              to="/vendors"
+              className="home-hero__cta-primary"
+              startIcon={<Sparkles />}
+            >
               Explore Vendors
             </Button>
-            <Button variant="secondary" size="large" to="/plan-wedding">
+            <Button
+              variant="outlined"
+              size="large"
+              component={RouterLink}
+              to="/plan-wedding"
+              className="home-hero__cta-secondary"
+            >
               Start Planning
             </Button>
           </Stack>
@@ -62,7 +75,7 @@ const HomePage = () => {
                 }}
               >
                 <CardContent className="home-feature-card__content">
-                  <Box className="home-feature-pcard__icon">{feature.icon}</Box>
+                  <Box className="home-feature-card__icon">{feature.icon}</Box>
                   <Typography variant="h5" className="home-feature-card__title" component="h3">
                     {feature.title}
                   </Typography>
