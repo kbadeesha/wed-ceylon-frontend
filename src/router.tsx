@@ -13,6 +13,7 @@ import Privacy from './components/layout/Footer/Privacy';
 import Terms from './components/layout/Footer/Terms';
 import YourPrivacyChoices from './components/layout/Footer/YourPrivacyChoices';
 import WebAccessibility from './components/layout/Footer/WebAccessibility';
+import ComponentsPage from './pages/Components/ComponentsPage';
 
 const routes: RouteObject[] = [
   {
@@ -47,6 +48,10 @@ const routes: RouteObject[] = [
       {
         path: 'join-now',
         element: <JoinNow />,
+      },
+      {
+        path: 'components',
+        element: <ComponentsPage />,
       },
       {
         path: 'privacy',
