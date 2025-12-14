@@ -1,8 +1,7 @@
 .navbar {
-  background: rgba(26, 26, 26, 0.95) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  background: var(--color-background) !important;
+  border-bottom: 1px solid var(--color-black);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .MuiToolbar-root {
     padding: 0 1rem;
@@ -17,10 +16,6 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 1.5rem;
-      background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       transition: all 0.3s ease;
 
       &:hover {
@@ -56,14 +51,14 @@
         left: 50%;
         width: 0;
         height: 2px;
-        background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+        background: var(--color-text-primary);
         transition: all 0.3s ease;
         transform: translateX(-50%);
       }
 
       &:hover {
         color: var(--color-text-primary);
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--color-beige);
 
         &::after {
           width: 100%;
@@ -95,25 +90,26 @@
       box-shadow: none;
 
       &:first-child {
-        color: var(--color-text-secondary);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: var(--color-text-primary);
+        background: var(--color-white);
+        border: 1px solid var(--color-black);
 
         &:hover {
-          background: rgba(255, 255, 255, 0.1);
-          border-color: rgba(255, 255, 255, 0.4);
+          background: var(--color-beige);
+          border-color: var(--color-text-primary);
           transform: translateY(-1px);
         }
       }
 
       &:last-child {
-        background: linear-gradient(45deg, #4d96ff, #6bcf7f);
-        color: var(--color-secondary);
-        box-shadow: 0 4px 15px rgba(77, 150, 255, 0.3);
+        background: var(--color-text-primary);
+        color: var(--color-white);
+        box-shadow: 0 4px 15px rgba(50, 50, 50, 0.3);
 
         &:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(77, 150, 255, 0.4);
-          background: linear-gradient(45deg, #3d86ff, #5bbf6f);
+          box-shadow: 0 6px 20px rgba(50, 50, 50, 0.4);
+          background: var(--color-black);
         }
       }
     }

@@ -60,11 +60,11 @@
 }
 
 .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
-  border-color: var(--color-dark-gray) !important;
+  border-color: var(--color-black) !important;
 }
 
 .MuiChip-root {
-  background-color: var(--color-darker-gray) !important;
+  background-color: var(--color-surface) !important;
   color: var(--color-text-primary) !important;
 }
 
@@ -85,9 +85,9 @@
   color: var(--color-text-primary) !important;
 }
 
-/* Body background for dark theme */
+/* Body background for light theme */
 body {
-  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-darker-gray) 100%);
+  background: var(--color-background);
   color: var(--color-text-primary) !important;
 }
 

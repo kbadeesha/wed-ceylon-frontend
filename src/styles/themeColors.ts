@@ -3,16 +3,20 @@ export const colors = {
   // Basic colors
   black: '#000000',
   white: '#ffffff',
-  lightGray: '#f5f5f5',
-  darkGray: '#333333',
-  darkerGray: '#1a1a1a',
-  darkest: '#121212',
+  beige: '#DDD0C8',
+  darkGrey: '#323232',
+
+  // Legacy mappings for compatibility
+  lightGray: '#ffffff',
+  darkGray: '#323232',
+  darkerGray: '#323232',
+  darkest: '#DDD0C8',
 
   // Semantic colors (matching SCSS variables)
-  primary: '#ffffff', // $primary-color - white for dark theme
-  secondary: '#000000', // $secondary-color - black for dark theme
-  background: '#121212', // $background-color - dark background
-  surface: '#1a1a1a', // $surface-color - slightly lighter dark
-  textPrimary: '#ffffff', // $text-primary-color - white text
-  textSecondary: '#f5f5f5', // $text-secondary-color - light gray text
+  primary: '#DDD0C8', // beige
+  secondary: '#323232', // dark grey
+  background: '#DDD0C8', // beige
+  surface: '#ffffff', // white
+  textPrimary: '#323232', // dark grey
+  textSecondary: '#000000', // black
 } as const;
