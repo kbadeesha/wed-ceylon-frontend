@@ -62,7 +62,7 @@ const HomePage = () => {
                 }}
               >
                 <CardContent className="home-feature-card__content">
-                  <Box className="home-feature-card__icon">{feature.icon}</Box>
+                  <Box className="home-feature-pcard__icon">{feature.icon}</Box>
                   <Typography variant="h5" className="home-feature-card__title" component="h3">
                     {feature.title}
                   </Typography>

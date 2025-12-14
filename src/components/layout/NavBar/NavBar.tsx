@@ -25,12 +25,10 @@ export default function NavBar() {
             <NavLink
               key={item.label}
               to={item.path}
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => `navbar__nav-link ${isActive ? 'active' : ''}`}
               style={{ textDecoration: 'none' }}
             >
-              <Button variant="outline" size="small">
-                {item.label}
-              </Button>
+              {item.label}
             </NavLink>
           ))}
         </Box>
