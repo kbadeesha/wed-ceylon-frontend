@@ -1,6 +1,7 @@
 // src/components/layout/NavMenu.tsx
 import { NavLink } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box } from '@mui/material';
+import Button from '../../common/Button';
 import GlobalConstants from '../../../constants/GlobalConstants';
 import './NavBar.scss';
 
@@ -27,15 +28,17 @@ export default function NavBar() {
               className={({ isActive }) => (isActive ? 'active' : '')}
               style={{ textDecoration: 'none' }}
             >
-              <Button>{item.label}</Button>
+              <Button variant="outline" size="small">
+                {item.label}
+              </Button>
             </NavLink>
           ))}
         </Box>
         <Box className="navbar__auth-buttons">
-          <Button color="inherit" component={NavLink} to="/signin">
+          <Button variant="outline" to="/signin">
             Sign In
           </Button>
-          <Button variant="contained" color="secondary" component={NavLink} to="/join-now">
+          <Button variant="secondary" to="/join-now">
             Join Now
           </Button>
         </Box>

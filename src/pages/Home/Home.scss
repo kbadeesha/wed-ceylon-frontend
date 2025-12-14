@@ -39,42 +39,6 @@
   margin-bottom: 3rem;
 }
 
-.home-hero__cta-primary {
-  background: var(--color-text-primary);
-  color: var(--color-white);
-  font-weight: 600;
-  padding: 12px 32px;
-  border-radius: 50px;
-  text-transform: none;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(50, 50, 50, 0.3);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(50, 50, 50, 0.4);
-    background: var(--color-black);
-  }
-}
-
-.home-hero__cta-secondary {
-  background: var(--color-white);
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-black);
-  font-weight: 600;
-  padding: 12px 32px;
-  border-radius: 50px;
-  text-transform: none;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-
-  &:hover {
-    border-color: var(--color-text-primary);
-    background-color: var(--color-beige);
-    transform: translateY(-2px);
-  }
-}
-
 // Features Section
 .home-features {
   padding: 40px 0;
@@ -135,48 +99,6 @@
   font-size: 0.95rem;
 }
 
-// CTA Section
-.home-cta {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.home-cta__content {
-  max-width: 600px;
-}
-
-.home-cta__title {
-  font-size: clamp(1.8rem, 3vw, 2.2rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--color-text-primary);
-}
-
-.home-cta__subtitle {
-  font-size: 1.1rem;
-  color: var(--color-text-secondary);
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
-}
-
-.home-cta__button {
-  background: var(--color-text-primary);
-  color: var(--color-white);
-  font-weight: 600;
-  padding: 14px 40px;
-  border-radius: 50px;
-  text-transform: none;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(50, 50, 50, 0.3);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(50, 50, 50, 0.4);
-    background: var(--color-black);
-  }
-}
-
 // Responsive Design
 @media (max-width: 768px) {
   .home-hero {
@@ -211,10 +133,6 @@
 
   .home-feature-card__content {
     padding: 1.5rem;
-  }
-
-  .home-cta {
-    padding: 60px 0;
   }
 }
 
