@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Button, Card, CardContent, Stack } from '@mui/material';
+import { Box, Typography, Button, Card, CardContent, Stack } from '@mui/material';
 import { Shield, Zap, Users, Sparkles } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 import './Home.scss';
@@ -30,7 +30,7 @@ const HomePage = () => {
 
   return (
     <Box className="home-page">
-      <Container className="home-hero__container">
+      <Box className="home-hero__container">
         <Box className="home-hero__content">
           <Typography variant="h1" className="home-hero__title" component="h1">
             Your Dream Wedding
@@ -65,29 +65,29 @@ const HomePage = () => {
             </Button>
           </Stack>
         </Box>
-        <Box className="home-features__grid">
-          {features.map((feature, index) => (
-            <Box key={index} className="home-feature-card-wrapper">
-              <Card
-                className="home-feature-card"
-                sx={{
-                  height: '100%',
-                }}
-              >
-                <CardContent className="home-feature-card__content">
-                  <Box className="home-feature-card__icon">{feature.icon}</Box>
-                  <Typography variant="h5" className="home-feature-card__title" component="h3">
-                    {feature.title}
-                  </Typography>
-                  <Typography variant="body1" className="home-feature-card__description">
-                    {feature.description}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Box>
-          ))}
-        </Box>
-      </Container>
+      </Box>
+      <Box className="home-features__grid">
+        {features.map((feature, index) => (
+          <Box key={index} className="home-feature-card-wrapper">
+            <Card
+              className="home-feature-card"
+              sx={{
+                height: '100%',
+              }}
+            >
+              <CardContent className="home-feature-card__content">
+                <Box className="home-feature-card__icon">{feature.icon}</Box>
+                <Typography variant="h5" className="home-feature-card__title" component="h3">
+                  {feature.title}
+                </Typography>
+                <Typography variant="body1" className="home-feature-card__description">
+                  {feature.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };
